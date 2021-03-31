@@ -2,11 +2,11 @@
 float angle=0; ///TODO:
 void display()
 {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); ///²MªÅ
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); ///Â²MÂªÃ…
 
     glPushMatrix();
         glRotatef( angle, 0,0,1);
-        glutSolidCube(1);///TODO: µe­Ó¤è¶ô
+        glutSolidCube(1);///TODO: ÂµeÂ­Ã“Â¤Ã¨Â¶Ã´
        glPopMatrix();
     glutSwapBuffers();
     angle++; ///todo:
