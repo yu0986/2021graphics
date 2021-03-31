@@ -7,7 +7,7 @@ void display()
     glRotatef(angle, 0, 0, 1);
     glScalef(0.5,0.1,0.1);
     glColor3f(0,0,1);
-       glutSolidCube(1); ///todo:�e�Ӥ��
+       glutSolidCube(1); ///todo:µe­Ó¤è¶ô
        glPopMatrix();
     glutSwapBuffers();
     angle++; ///todo:
