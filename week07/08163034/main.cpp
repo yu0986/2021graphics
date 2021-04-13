@@ -4,16 +4,16 @@
 float angle=0; ///TODO:
 void hand(){
      glPushMatrix();
-        glScalef(0.5,0.1,0.1);///²Óªøªº
-        glColor3f(1,1,1);///¥Õ¦âªº
-        glutSolidCube(1);///¤è¶ô
+        glScalef(0.5,0.1,0.1);///ç´°é•·çš„
+        glColor3f(1,1,1);///ç™½è‰²çš„
+        glutSolidCube(1);///æ–¹å¡Š
     glPopMatrix();
 }
 
 void display()
 {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); ///²MªÅ
-    glColor3f(1,1,1); glutSolidCube(0.5);///¤j¨­Åé
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); ///æ¸…ç©º
+    glColor3f(1,1,1); glutSolidCube(0.5);///å¤§èº«é«”
     glBegin(GL_POLYGON);
 
    glColor3f(255/255.0, 255/255.0, 255/255.0);
@@ -24,31 +24,31 @@ void display()
 
     }
 
-    glEnd();    ///¶ê
+    glEnd();    ///åœ“
 
     glPushMatrix();
-        glTranslatef(0.25,0.25,0);///(3)¾ã­Ó²¾¨ì¥k¤W¨¤±¾µÛ
-        glRotatef(angle, 0, 0, 1);///(2)¹ï¤¤¤ßÂà°Ê
-        glTranslatef(0.25,0,0);///(1)§âÃö¸`²¾¨ì¤¤¤ß
-        hand();///²Óªø¥Õ¦â¤p¤â
+        glTranslatef(0.25,0.25,0);///(3)æ•´å€‹ç§»åˆ°å³ä¸Šè§’æ›è‘—
+        glRotatef(angle, 0, 0, 1);///(2)å°ä¸­å¿ƒè½‰å‹•
+        glTranslatef(0.25,0,0);///(1)æŠŠé—œç¯€ç§»åˆ°ä¸­å¿ƒ
+        hand();///ç´°é•·ç™½è‰²å°æ‰‹
         glPushMatrix();
-            glTranslatef(0.25,0,0);///(3)©¹¥k¤W¹L¥h
+            glTranslatef(0.25,0,0);///(3)å¾€å³ä¸Šéå»
             glRotatef(angle, 0,0,1);///(2)
             glTranslatef(0.25,0,0);///(1)
-            hand();///¤U¤âÁu/¤â¨y
+            hand();///ä¸‹æ‰‹è‡‚/æ‰‹è‚˜
         glPopMatrix();
     glPopMatrix();
 
-    glPushMatrix();///¥ª¥bÃä
-        glTranslatef(-0.25,0.25,0);///(3)¾ã­Ó²¾¨ì¥ª¤W¨¤±¾µÛ
-        glRotatef(-angle, 0, 0, 1);///(2)¹ï¤¤¤ßÂà°Ê
-        glTranslatef(-0.25,0,0);///(1)§âÃö¸`²¾¨ì¤¤¤ß
-        hand();///²Óªø¥Õ¦â¤W¤âÁu
+    glPushMatrix();///å·¦åŠé‚Š
+        glTranslatef(-0.25,0.25,0);///(3)æ•´å€‹ç§»åˆ°å·¦ä¸Šè§’æ›è‘—
+        glRotatef(-angle, 0, 0, 1);///(2)å°ä¸­å¿ƒè½‰å‹•
+        glTranslatef(-0.25,0,0);///(1)æŠŠé—œç¯€ç§»åˆ°ä¸­å¿ƒ
+        hand();///ç´°é•·ç™½è‰²ä¸Šæ‰‹è‡‚
         glPushMatrix();
-            glTranslatef(-0.25,0,0);///(3)©¹¥ª¤W¹L¥h
+            glTranslatef(-0.25,0,0);///(3)å¾€å·¦ä¸Šéå»
             glRotatef(-angle, 0,0,1);///(2)
             glTranslatef(-0.25,0,0);///(1)
-            hand();///¤U¤âÁu/¤â¨y
+            hand();///ä¸‹æ‰‹è‡‚/æ‰‹è‚˜
         glPopMatrix();
     glPopMatrix();
 
